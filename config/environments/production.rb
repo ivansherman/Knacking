@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  ### Require for Devise
+  ### Required for Heroku as well
+  config.action_mailer.default_url_options = { :host => 'https://demoday-knacking.herokuapp.com' }
 end
