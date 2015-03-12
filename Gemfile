@@ -20,6 +20,7 @@ gem 'geokit-rails'
 gem 'devise'
 
 gem 'inkwell'
+gem "socialization"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
