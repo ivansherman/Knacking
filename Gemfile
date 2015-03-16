@@ -19,6 +19,8 @@ gem 'bootstrap-sass'
 gem 'geokit-rails'
 gem 'devise'
 
+gem "bower-rails", "~> 0.9.2"
+
 gem 'inkwell'
 gem "socialization"
 

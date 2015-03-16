@@ -5,5 +5,9 @@ class PagesController < ApplicationController
   def about 
   end
 
+  def login 
+  end
   
+  def test_layout
+  end
 end
