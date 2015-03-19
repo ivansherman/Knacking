@@ -15,7 +15,9 @@ gem 'coffee-rails', '~> 4.1.0'
 
 ####### Not brought together with rails
 
+gem 'jquery-turbolinks'
 gem 'bootstrap-sass'
+gem 'geocoder'
 gem 'geokit-rails'
 gem 'devise'
 
@@ -23,6 +25,8 @@ gem "bower-rails", "~> 0.9.2"
 
 gem 'inkwell'
 gem "socialization"
+
+gem 'vuejs-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

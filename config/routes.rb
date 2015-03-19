@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   get 'about' => 'pages#about'
   get 'login' => 'pages#login'
-  get 'Test Layout' => 'pages#tet_layout'
+  get 'test' => 'pages#test_layout'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
