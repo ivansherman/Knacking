@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150312141556) do
+ActiveRecord::Schema.define(version: 20150322152914) do
 
   create_table "categories", force: :cascade do |t|
     t.datetime "created_at",                null: false
@@ -157,6 +157,24 @@ ActiveRecord::Schema.define(version: 20150312141556) do
     t.text     "communities_ids",           default: "[]"
   end
 
+  create_table "profiles", force: :cascade do |t|
+    t.string   "profile_name"
+    t.string   "display_name"
+    t.text     "about"
+    t.string   "genre"
+    t.text     "location"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "profiles", ["about"], name: "index_profiles_on_about"
+  add_index "profiles", ["display_name"], name: "index_profiles_on_display_name"
+  add_index "profiles", ["genre"], name: "index_profiles_on_genre"
+  add_index "profiles", ["location"], name: "index_profiles_on_location"
+  add_index "profiles", ["profile_name"], name: "index_profiles_on_profile_name"
+  add_index "profiles", ["user_id"], name: "index_profiles_on_user_id"
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -173,9 +191,15 @@ ActiveRecord::Schema.define(version: 20150312141556) do
     t.integer  "follower_count",         default: 0
     t.integer  "following_count",        default: 0
     t.integer  "community_count",        default: 0
+    t.integer  "profile_id"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["profile_id"], name: "index_users_on_profile_id"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end

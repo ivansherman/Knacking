@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 
 ####### Not brought together with rails
+gem "table_print"
 
 gem 'jquery-turbolinks'
 gem 'bootstrap-sass'
@@ -27,6 +28,11 @@ gem 'inkwell'
 gem "socialization"
 
 gem 'soundcloud', '~> 0.3.2'
+
+gem 'simple_form'
+
+gem "figaro"
+gem "paperclip", "~> 4.2"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

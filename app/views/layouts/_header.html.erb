@@ -38,7 +38,7 @@
 
         <% if user_signed_in? %>
 
-        <%= link_to destroy_user_session_path, method: :delete, class: "login-toggle header-btn header-btn-xl", data: {slide: "slide", target: "#login-panel"} do %>
+        <%= link_to destroy_user_session_path, method: :delete, class: "login-toggle header-btn header-btn-xl", data: {slide: "slide"} do %>
             <i class="fa fa-sign-in header-icon"></i>
             <span class="header-btn-text">
             Log Out

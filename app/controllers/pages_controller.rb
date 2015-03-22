@@ -7,6 +7,9 @@ class PagesController < ApplicationController
 
   def login 
   end
+
+  def signup 
+  end
   
   def test_layout
   end

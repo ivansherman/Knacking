@@ -2614,8 +2614,8 @@ input[type="search"] {
 }
 .radio label,
 .checkbox label {
-  min-height: 20px;
-  padding-left: 20px;
+  min-height: 15px;
+  padding-left: 10px;
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
@@ -2625,7 +2625,7 @@ input[type="search"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-left: -20px;
+  margin-left: -14px;
   margin-top: 4px \9;
 }
 .radio + .radio,
