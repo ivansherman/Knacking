@@ -26,7 +26,7 @@ gem "bower-rails", "~> 0.9.2"
 gem 'inkwell'
 gem "socialization"
 
-gem 'vuejs-rails'
+gem 'soundcloud', '~> 0.3.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
