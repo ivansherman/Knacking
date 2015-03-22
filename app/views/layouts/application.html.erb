@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
+    <%= render 'layouts/head' %>
     <title>Knacking</title>
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
   </head>
-    <body>
-      <div class="container">
-      <%= yield %>
-    </body>
+  <body>
+    <div class="container">
+    
+      <%= render 'layouts/header' %>
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+      <% end %>
+
+    <%= yield %>
+
+    </div>
+  </body>
 </html>
